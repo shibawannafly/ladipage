@@ -1,0 +1,48 @@
+.get-quote {
+  background-color: _palette(p-blue);
+  padding: 4rem 0;
+  color: rgba(255, 255, 255, 0.705);
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    // background-color: #454b54;
+    // box-shadow: 0 3px 21px #608282;
+    padding: 0rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .contact-heading {
+    text-transform: capitalize;
+    font-weight: _font(w-bold);
+    color: white;
+    margin: 1rem;
+  }
+
+  .contact-para {
+    margin: 0 0 3rem;
+    color: white;
+    // font-style: italic;
+  }
+
+  @include breakpoint(medium) {
+    .container {
+      width: 80%;
+      padding: 2rem 1rem;
+    }
+    .contact-heading {
+      font-size: 2rem;
+    }
+  }
+  @include breakpoint(xsmall) {
+    .container {
+      width: 95%;
+    }
+  }
+}

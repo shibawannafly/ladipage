@@ -1,0 +1,43 @@
+
+.service-page {
+    background: #fff;
+
+    .header {
+        padding: 4% 4% 2% 8%;
+        background: _palette(p-blue);
+        color: _palette(fg);
+    }
+
+    .title {
+        color: _palette(fg);
+    }
+
+    .intro {
+        padding: 5% 8% 4% 8%;
+    }
+
+    //Overriding Bootstrap Nav
+    .nav-link {
+        background: _palette(p-light3);
+        color: _palette(fg);
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+
+    }
+
+    .nav-link.active {
+        transition: .4s ease-out;
+        background: _palette(p-blue);
+    }
+    .container {
+        text-align: center;
+        justify-content: center;
+    }
+    ol {
+        li {
+            font-family: _palette(family);
+            font-weight: 200;
+        }
+    }
+}

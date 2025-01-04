@@ -1,0 +1,73 @@
+.testimonials {
+  padding: 3rem 6rem;
+  background-color: _palette(p-light2);
+
+  &.why-choose-us {
+    background-color: _palette(p-med);
+    text-align: center;
+    p,
+    h5 {
+      color: white !important;
+    }
+  }
+  .container {
+    width: 100%;
+  }
+  .heading-one,
+  .heading-two {
+    margin-bottom: 3rem;
+    color: _palette(fg);
+    text-transform: capitalize;
+    font-weight: _font(w-bold);
+  }
+
+  .heading-one {
+    text-align: left;
+    color: _palette(fg);
+  }
+
+  .heading-two {
+    text-align: right;
+    color: _palette(p-dark);
+    margin-bottom: 3rem;
+  }
+
+  &.partners {
+    background-color: _palette(fg);
+  }
+  .testi-icon {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .brands {
+    img {
+      width: 80%;
+    }
+
+    div {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .container {
+      width: 100%;
+    }
+    .heading-one,
+    .heading-two {
+      font-size: 2rem;
+    }
+    padding: 3rem 3rem;
+  }
+
+  @include breakpoint(small1) {
+    .heading-one,
+    .heading-two {
+      text-align: center;
+    }
+    padding: 3rem 1rem;
+  }
+}

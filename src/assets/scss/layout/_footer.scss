@@ -1,0 +1,74 @@
+footer {
+  background-color: _palette(p-dark);
+
+  .container {
+    color: white;
+    padding: 3rem 1rem 1rem;
+  }
+
+  a {
+    color: white;
+    font-weight: _font(w-thin);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: _palette(p-blue);
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .address {
+    > p {
+      cursor: default;
+    }
+  }
+
+  .other {
+    > p {
+      font-weight: _font(w-thin);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: _palette(p-blue);
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+
+  h6 {
+    font-weight: 900 !important;
+    color: white;
+  }
+
+  hr {
+    background: lightblue;
+    height: 0.1rem;
+  }
+
+  // .footer-hr {
+  //   background: rgba(143, 130, 160, 0.658);
+  //   height: 0.3px;
+  //   width: 60%;
+  // }
+
+  .copyright {
+    color: #e6dbdbc2;
+    font-size: 1rem;
+    padding: 2rem 0;
+    cursor: default;
+    background: _palette(p-med2);
+    margin: 0;
+  }
+
+  @include breakpoint(small2) {
+    .copyright {
+      font-size: 0.9rem;
+      padding: 2rem 5rem;
+    }
+  }
+  @include breakpoint(xsmall) {
+      padding: 2rem;
+    
+  }
+}

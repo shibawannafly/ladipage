@@ -1,0 +1,79 @@
+.about-page {
+  background: #fff;
+
+  .header {
+    padding: 4% 4% 2% 8%;
+    background: _palette(p-blue);
+    color: _palette(fg);
+  }
+  .title {
+    color: _palette(fg);
+  }
+  .intro {
+    padding: 5% 8% 4% 8%;
+  }
+  .intro-image {
+    width: 100%;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .stats {
+    background: _palette(p-light);
+    text-align: center;
+    color: _palette(p-med);
+    padding: 4% 8% 2% 8%;
+  }
+
+  .stats-heading {
+    margin-bottom: 5%;
+    color: _palette(p-blue);
+  }
+
+  .numbers {
+    font-size: 3rem;
+    color: #3ad29f;
+    font-weight: _font(w-light);
+  }
+
+  .claim {
+    text-align: center;
+    padding: 5% 10%;
+  }
+
+  .claim-heading {
+    margin-bottom: 5%;
+  }
+
+  .claim-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  @include breakpoint(medium) {
+    .numbers {
+      font-size: 2.2rem;
+    }
+  }
+  @include breakpoint(small1) {
+    .about-content {
+      text-align: center;
+    }
+  }
+  @include breakpoint(small2) {
+    .numbers {
+      font-size: 1.9rem;
+    }
+  }
+  @include breakpoint(xsmall) {
+    .numbers {
+      font-size: 2.2rem;
+    }
+  }
+  @include breakpoint(xsmall3) {//360
+    .claim-image {
+      width: 16rem;
+      height: 16rem;
+    }
+  }
+}

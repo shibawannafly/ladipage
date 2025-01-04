@@ -1,0 +1,168 @@
+/* Header SCSS */
+
+#header {
+  position: relative;
+
+  .contact-header {
+    height: 2.5rem;
+    width: 100%;
+    margin: 0;
+    background: _palette(fg);
+    color: _palette(p-med3);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    > div {
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  .contact-icon {
+    margin-right: 2px;
+  }
+
+  // Custom Brand
+  .brand {
+    font-size: 1.5rem;
+    font-weight: _font(w-bold);
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .navbar {
+    padding-top: 3rem;
+  }
+
+  // Custom Bar
+  .navbar-bg {
+    font-family: _font(family);
+    letter-spacing: 1px;
+    background: #242424; //_palette(p-med2)
+  }
+
+  // Custom Toggler
+  .hamburger {
+    color: _palette(fg);
+    background: _palette(fg);
+    border: none;
+  }
+
+  // Custom Nav Links
+  .section-link {
+    font-family: _font(family);
+    font-weight: _font(w-med);
+    font-size: 1rem;
+    color: _palette(fg);
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: _palette(p-blue);
+      text-decoration: none;
+    }
+  }
+
+  .request-link {
+    font-family: _font(family);
+    font-weight: _font(w-med);
+    background-color: _palette(p-blue);
+    color: _palette(fg);
+    font-size: 1rem;
+    margin: 0 10px;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: _palette(p-blue2);
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  .select-label {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .language-box {
+    border-radius: 5px;
+    display: inline-block;
+    width: 3.5rem;
+    cursor: pointer;
+    height: 1.5rem;
+    padding: 1px;
+  }
+
+  .flag {
+    width: 10px;
+  }
+
+  /* Other Overrides on Bootstrap Navbar SCSS */
+  // .nav-link.section-link {
+  //     &:hover {
+  //         color: _palette(fg) !important;
+  //     }
+  // }
+
+  .navbar-toggler,
+  .navbar-toggler-icon {
+    border: none;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  // .navbar-toggler:hover,
+  // .navbar-toggler-icon:hover {
+  //     transition: .6s;
+  //     transform: rotate(90deg);
+  // }
+  @include breakpoint(medium) {
+    .contact-header {
+      position: relative;
+      > div {
+        display: none;
+        text-align: right;
+      }
+      .language-header {
+        display: block;
+      }
+    }
+    .language-header {
+      display: block;
+    }
+    .navbar {
+      padding: 0rem 0rem;
+    }
+    .hamburger {
+      margin-right: 1rem;
+    }
+    .request-link, .section-link {
+      background-color: transparent;
+      &:hover {
+        color: _palette(p-blue);
+        background-color: _palette(p-med);
+        margin: 0;
+        border-radius: 0;
+      }
+    }
+    .ml-auto {
+      text-align: center;
+    }
+  }
+}

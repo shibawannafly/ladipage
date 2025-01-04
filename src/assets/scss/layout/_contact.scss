@@ -1,0 +1,86 @@
+.contact-page {
+  background: #fff;
+
+  .header {
+    padding: 4% 4% 2% 8%;
+    background: _palette(p-blue);
+    color: _palette(fg);
+  }
+
+  .title {
+    color: _palette(fg);
+  }
+  .contact-inner-section {
+    //Uncomment this if using Google Map API
+    // margin-top: 25rem;
+    background-color: _palette(fg);
+    padding: 4rem 0;
+    .heading {
+      margin-bottom: 3rem;
+      color: _palette(p-med);
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: _font(w-bold);
+    }
+    h5 {
+      font-weight: 900;
+    }
+    hr {
+      background-color: _palette(p-blue5);
+      height: 0.1rem;
+    }
+    .ct-icon {
+      font-size: 1.3rem;
+    }
+  }
+  .send-email-note {
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+
+  @include breakpoint(xlarge) {//1200px
+    .contact-inner-section {
+      // margin-top: 23rem;
+      padding: 3rem 0;
+    }
+  }
+  @include breakpoint(medium) {
+    .contact-inner-section {
+      // margin-top: 22rem;
+    }
+  }
+  @include breakpoint(small1) {
+    //768
+    .contact-inner-section {
+      padding: 2rem 0;
+      // margin-top: 25rem;
+    }
+  }
+  @include breakpoint(xsmall) {
+    //575.98px
+    .heading {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    .contact-inner-section {
+      // margin-top: 20rem;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+  }
+  @include breakpoint(xsmall2) {
+    //480
+    .contact-inner-section {
+      // margin-top: 23rem;
+    }
+  }
+  @include breakpoint(xsmall3) {
+    //360
+    .contact-inner-section {
+      // margin-top: 20rem;
+    }
+  }
+}

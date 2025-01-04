@@ -1,0 +1,58 @@
+.our-services {
+  text-align: center;
+  padding: 3rem 6rem;
+  background-color: _palette(fg);
+
+  .heading {
+    margin-bottom: 3rem;
+    color: _palette(p-med);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: _font(w-bold);
+  }
+
+  .card,
+  a {
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    box-shadow: -0.0625rem 0 0.625rem 0 rgba(95, 182, 204, 0.13),
+      0.3125rem 0.25rem 1.3rem rgba(184, 184, 184, 0.144) !important;
+    text-decoration: none;
+    color: _palette(p-dark);
+
+    &:hover {
+      transition: 0.2s ease-out;
+      background: _palette(p-med4);
+    }
+  }
+
+  .card-title,
+  .card-text {
+    cursor: pointer;
+  }
+
+  .service-icon {
+    width: 5rem;
+    height: 6rem;
+    margin: 0rem auto 1rem;
+  }
+
+  @include breakpoint(large) {
+    .service-row2 {
+      margin: 0 9rem;
+    }
+  }
+  @include breakpoint(medium) {
+    .service-row2 {
+      margin: 0 0rem;
+    }
+    .heading {
+      font-size: 2rem;
+    }
+  }
+  @include breakpoint(xsmall) {
+    //575
+    padding: 3rem 2rem;
+  }
+}
